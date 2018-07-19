@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css"><!--Standard CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/jquery.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/portfolio.js"></script><!--jQuery-->
+  <!--header-->
+    <script>
+    $(function(){
+      $("#header").load("http://www.jonathanlawrence.me/html/header.html");
+    });</script>
+    <title class="title">
+      JLawrence
+    </title>
+  </head>
+  <body class="page-portfolio" id="binfo"><!--#binfo-->
+
+<div id="header">
+  <!--includes header.html-->
+</div>
+
+<div class="content">
+
+<!--left hand navigation-->
+<div id="leftnav" style="text-align: center">
+  <div id="leftcont">
+    <p style="font-size:15px; font-weight:bold; color:white;">GO TO</p>
+    <hr> <!--Paragraph-Level Thematic Break-->
+    <p><a href="#binfo">Basic Info</a></p>
+    <p><a href="#hire">Why Hire Me?</a></p>
+    <p><a href="#skillz">Skills</a></p>
+    <p><a href="#hist">Work History</a></p>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="infobox" style="text-align: center";>
+  <br>
+    <hr> <!--Paragraph-Level Thematic Break-->
+  	<p id="section-title">Basic Info</p>
+  	<hr> <!--Paragraph-Level Thematic Break-->
+
+  <div style="display: inline-block; vertical-align: top;">
+    <img id="profile-pic" src="images/portfolio/profile-pic.png" alt="profile pic";></img>
+  </div>
+
+  <div id="info"; style="display: inline-block; vertical-align: top;" margin:10px;>
+    <p>Name:</p>
+    <p class="bigtext">Jonathan Lawrence</p>
+    <p>Job Title:</p>
+    <p class="bigtext">Aspiring Software Developer</p>
+    <p>College:</p>
+    <p class="bigtext"> Texas A&M University</p>
+    <p>Degree:</p>
+    <p style="color:gold;"><i>Bachelor of Science</i></p>
+    <p class="bigtext">Electronics Engineering Technology</p><br id="hire"><!--#hire-->
+  </div>
+</div>
+<br><br><br>
+
+<div class="infobox" style="text-align: center;">
+  <br>
+    <hr> <!--Paragraph-Level Thematic Break-->
+  	<p id="section-title">Why hire me?</p>
+  	<hr> <!--Paragraph-Level Thematic Break-->
+  <div style="display: inline-block; vertical-align: top;";>
+    <p class="bigtext">I am passionate about this industry!</p><br>
+    <p class="bigtext">I have a tremendous level of experience collaborating on multi-team projects.</p><br>
+    <p class="bigtext">I am capable of delivering high quality work with little to no direction.</p><br>
+    <p class="bigtext">I have exceptional people skills and capable of maintaining professionalism in any situation.</p><br id="skillz"><!--#skillz-->
+  </div>
+</div>
+<br><br><br>
+
+	<!--SKILLS-->
+<div class="infobox" style="text-align: center;">
+  <br>
+	<hr> <!--Paragraph-Level Thematic Break-->
+	<p id="section-title">Skills</p>
+	<hr> <!--Paragraph-Level Thematic Break-->
+  <div class="centered-content">
+    <p class="column-title"> IDE"s and Applications<p>
+      <br>
+      <div class="skill" id="icon-github">
+        <figure>
+          <img src="images/portfolio/icon-github.png" alt="GitHub">
+        </figure>
+          <p>I used GitHub to develop and host this website. I migrated to GitHub to take advantage of its development tools and hosting capabilities.</p>
+      </div>
+      <div class="skill" id="icon-atom">
+        <figure>
+          <img src="images/portfolio/icon-atom.png" alt="Atom">
+        </figure>
+            <p>I used Atom as my primary text/source code editor for this website.</p>
+      </div>
+      <div class="skill" id="icon-eclipse">
+        <figure>
+          <img src="images/portfolio/icon-eclipse.png" alt="ECLIPSE">
+        </figure>
+            <p>During my employment as a <span style="color:yellow">Java Applications Developer for Cisco Systems</span>, I used Eclipse as my primary IDE to develop and debug Java applications. </p>
+      </div>
+      <div class="skill" id="icon-wordpress">
+        <figure>
+          <img src="images/portfolio/icon-wordpress.png" alt="Wordpress">
+        </figure>
+            <p>Before I migrated this site to GitHub, I began with Wordpress. I am familiar with how it works and I am capable of using it in full capacity.</p>
+      </div>
+  </div>
+
+  <div class="centered-content">
+    <p class="column-title"> Markup/Programming Languages<p>
+      <br>
+      <div class="skill" id="icon-html5">
+        <figure>
+          <img src="images/portfolio/icon-html5.png" alt="HTML5">
+        </figure>
+        <p>This website was created in HTML5. I am fluent in this skill however I continually seek new and exciting ways to implement it as well as improving the efficiency of my code.</p>
+        </br>
+        <p>Current Focus: Canvas, Audio, and Video</p>
+      </div>
+      <div class="skill" id="icon-css3">
+        <figure>
+          <img src="images/portfolio/icon-css3.png" alt="CSS3">
+        </figure>
+        <p>I am well-versed in CSS3. Several areas of this website have been enhanced due to the improvements in CSS3 over standard CSS.</p>
+        <br>
+        <p>Current Focus: Flexbox and Animations</p>
+      </div>
+      <div class="skill" id="icon-jquery">
+        <figure>
+          <img src="images/portfolio/icon-jquery.png" alt="JQUERY">
+        </figure>
+        <p>I am capable of reading and writing functional JavaScript code including jQuery, traversing the DOM, and working with arrays. I find it fascinating and fun to experiment with.</p>
+        <br>
+        <p>Current Focus: JSON <a href="http://try.jquery.com" style="color:lightblue">http://try.jquery.com</a></p>
+      </div>
+      <div class="skill" id="icon-c">
+        <figure>
+          <img src="images/portfolio/icon-c.png" alt="C">
+        </figure>
+        <p>I am familiar with C programming. My previous experience includes a vending machine control system for my Capstone Senior Design project, a sonar range finder as part of a class project, and controlling VEX robots using a C-based language called RobotC during my summer internship with <span style="color:yellow">Texas A&M University RFID Lab</span>.</p>
+      </div>
+      <div class="skill" id="icon-java">
+        <figure>
+          <img src="images/portfolio/icon-java.png" alt="Java">
+        </figure>
+        <p>I used Java during my time as a <span style="color:yellow">Java Applications Developer for Cisco Systems</span>. I am familiar with its implementation and basic use.</p>
+      </div>
+      <div class="skill" id="icon-python">
+        <figure>
+          <img src="images/portfolio/icon-python.png" alt="Python">
+        </figure>
+        <p>I am a beginner at Python, capable of creating simple applications. I am actively researching this languge to enhance future web-based applications for this site.</p>
+        <br>
+        <p>Current Focus: Python-Driven Web Applications <a href="https://www.codecademy.com/learn/python" style="color:lightblue">https://www.codecademy.com/learn/python</a></p>
+      </div>
+</div>
+</div>
+<br><br><br>
+
+	<!--WORK HISTORY-->
+<div id="hist" class="infobox">
+  <br>
+    <hr> <!--Paragraph-Level Thematic Break-->
+  	<p id="section-title"  style="text-align: center;">Work History</p>
+  	<hr> <!--Paragraph-Level Thematic Break-->
+
+<div id="work-descriptions">
+    <p class="bigtext">Voice Network Engineer - Reynolds and Reynolds - Jan 2014 – Present</p>
+    <p>o	Resolved hardware and software issues involving VOIP phone systems</p>
+    <p>o	Configured offsite networks involving issues with VLANs, VPNs, NAT, DNS, switch configurations and VOIP installations</p>
+    <p>o	Resolved a record 50 issues for a new Reynolds and Reynolds customer over a 1 month period</p>
+    <p>o	Improved hardware and software products through submission of over 60 technical proposals</p>
+    <p>o	Trained new associates with classroom sessions and 1-on-1 instruction</p>
+    <p>o	Tested new product releases and delivered feedback reports</p>
+</p>
+    <br>
+    <p class="bigtext">Systems Designer - TAMU Product Innovations Development - Jan 2013 – May 2013</p>
+    <p>o	Proposed design enhancements for autonomous robotic cars for the TAMU Krisys competition</p>
+    <p>o	Created design proposals utilizing Solidworks and Multisim for the TAMU-E-Clock device</p>
+
+    <br>
+    <p class="bigtext">Java Applications Developer - Cisco Systems - Aug 2012 – Dec 2012</p>
+    <p>o	Developed a Java application using Eclipse to integrate Cisco phones with a web interface for automated calling features</p>
+    <br>
+    <p class="bigtext">Programming Intern – Texas A&M University RFID Lab - May 2011 – August 2011</p>
+    <p>o	Developed over 10 original RobotC programs for autonomous robotic vehicles</p>
+    <p>o	Assisted with a seminar teaching RobotC to prospective students</p>
+  </div>
+</div><!--End work history-->
+
+
+
+    <div class="back-button" style="display: none;">
+     <p><a href="#TOP">Back to Top</a><p>
+    </div>
+
+  </div> <!--End of Container-->
+  </div> <!--End of Content-->
+
+  </body>
+</html>

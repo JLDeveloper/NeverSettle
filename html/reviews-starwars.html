@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/css.css"><!--Standard CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/jquery.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+    <script src="../js/starwars.js"></script><!--jQuery-->
+    <!--NAV BAR-->
+    <script>
+    $(function(){
+      $("#header").load("http://www.jonathanlawrence.me/html/header.html");
+    });</script>
+    <title id="Title">
+      Book Reviews
+    </title>
+  </head>
+  <body class="page-starwars">
+    <div id="header">
+      <!--includes header.html-->
+    </div>
+	<!-- <div class="timeline"> grey timeline box--></div>
+    <div class="content">
+      <div class="container" id="SWPage">
+        <div id="BookInfo"/>
+          <table id="SWTable">
+            <thead>
+              <tr id="bookLegend">
+                <th class="bookBox">LEGENDS</th>
+                <th id="timeline">Timeline</th>
+                <th class="bookBox">CANON</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="Title_ThePreRepublicEra">
+                <td class="Era" colspan="3">THE PRE-REPUBLIC ERA</td>
+              </tr>
+              <tr id="L01-PRE-IntoTheVoid">
+                <td><p>Dawn of the Jedi: Into the Void</p></td>
+                <td>25,793 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="Title_TheOldRepublicEra">
+                <td class="Era" colspan="3">THE OLD REPUBLIC ERA</td>
+              </tr>
+              <tr id="L02-TOR-LostTribeOfTheSith">
+                <td><p>Lost Tribe of the Sith: The Collected Stories</p></td>
+                <td>5,000-2,975 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L03-TOR-Revan">
+                <td><p>The Old Republic: Revan</p></td>
+                <td>3,954-3,950 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L04-TOR-Deceived">
+                <td>
+                  <p>The Old Republic: Deceived</p>
+                </td>
+                <td>3,653 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L05-TOR-RedHarvest">
+                <td>
+                  <p>Red Harvest</p>
+                </td>
+                <td>3,645 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L06-TOR-FatalAlliance">
+                <td>
+                  <p>The Old Republic: Fatal Alliance</p>
+                </td>
+                <td>3,643 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L07-TOR-Annihilation">
+                <td>
+                  <p>The Old Republic: Annihilation</p>
+                </td>
+                <td>3,640 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L08-TOR-KnightErrant">
+                <td>
+                  <p>Knight Errant</p>
+                </td>
+                <td>1,032 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L09-TOR-Bane1">
+                <td>
+                  <p>Darth Bane: Path of Destruction</p>
+                </td>
+                <td>1,003-1,000 BBY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="Title_RiseOfTheEmpireEra">
+                <td class="Era" colspan="3">RISE OF THE EMPIRE ERA</td>
+              </tr>
+              <tr id="L10-ROTE-Bane2">
+                <td>
+                  <p>Darth Bane: Rule of Two</p>
+                </td>
+                <td>1,000-990 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L11-ROTE-Bane3">
+                <td>
+                  <p>Darth Bane: Dynasty of Evil</p>
+                </td>
+                <td>980 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L12-ROTE-">
+                <td>
+                  <p>Darth Plagueis</p>
+                </td>
+                <td>67-32 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L13-TPE-">
+                <td>
+                  <p>Maul: Lockdown</p>
+                  </td>
+                <td>33 BBY</td>
+                <td><p>-</p></td>
+              </tr>
+              <tr id="L14-TPE-">
+                <td>
+                  <p>Cloak of Deception</p>
+                  <p>Darth Maul: Shadow Hunter</p>
+                  <p>Episode I: The Phantom Menace</p>
+                </td>
+                <td>32 BBY</td>
+                <td>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>Episode I: The Phantom Menace</p>
+                </td>
+              </tr>
+              <tr id="L16-TPE-">
+                <td>
+                  <p>Rogue Planet</p>
+                </td>
+                <td>29 BBY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L17-TPE-">
+                <td>
+                  <p>Outbound Flight</p>
+                  </td>
+                <td>27 BBY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L18-TPE-">
+                <td>
+                  <p>The Approaching Storm</p>
+                  <p>Episode II: Attack of the Clones</p>
+                  <p>The Cestus Deception</p>
+                  <p>Jedi Trial</p>
+                  <p>The Clone Wars</p>
+                  <p>The Clone Wars: Wild Space</p>
+                  <p>Republic Commando: Hard Contact</p>
+                  <p>Shatterpoint</p>
+                  <p>The Clone Wars: No Prisoners</p>
+                </td>
+                <td>22 BBY</td>
+                <td>
+                  <p>-</p>
+                  <p>Episode II: Attack of the Clones</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L19-TPE-">
+                <td>
+                  <p>Republic Commando: Triple Zero</p>
+                  <p>The Clone Wars Gambit: Stealth</p>
+                  <p>The Clone Wars Gambit: Siege</p>
+                  <p>Republic Commando: True Colors</p>
+                </td>
+                <td>21 BBY</td>
+                <td>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L20-TPE-">
+                <td>
+                  <p>Medstar I: Battle Surgeons</p>
+                  <p>Medstar II: Jedi Healer</p>
+                </td>
+                <td>20 BBY</td>
+                <td>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L21-TPE-">
+                <td>
+                  <p>Yoda: Dark Rendezvous</p>
+                  <p>Labyrinth of Evil</p>
+                </td>
+                <td>19 BBY</td>
+                <td>
+                  <p>Dark Disciple</p>
+                </td>
+              </tr>
+              <tr id="L22-TPE">
+                <td>
+                  <p>Episode III: Revenge of the Sith</p>
+                  <p>Order 66: A Republic Commando Novel</p>
+                  <p>Dark Lord: The Rise of Darth Vader</p>
+                  <p>Imperial Commando: 501st</p>
+                  <p>Kenobi</p>
+                  <p>Coruscant Nights I: Jedi Twilight</p>
+                </td>
+                <td>19 BBY</td>
+                <td>
+                  <p>Episode III: Revenge of the Sith</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L23-TPE">
+                <td>
+                  <p>Coruscant Nights II: Street of Shadows</p>
+                  <p>Coruscant Nights III: Patterns of Force</p>
+                </td>
+                <td>18 BBY</td>
+                <td>
+                  <p>Ahsoka</p>
+                </td>
+              </tr>
+              <tr id="L24-TPE">
+                <td>
+                  <p>The Last Jedi</p>
+                </td>
+                <td>17 BBY</td>
+                <td>
+                  <p>Catalyst: A Rogue One Novel</p>
+                </td>
+              </tr>
+              <tr id="L25-TCE">
+                <td>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+                <td>14 BBY</td>
+                <td>
+                  <p>Lords of the Sith</p>
+                  <p>Tarkin</p>
+                </td>
+              </tr>
+              <tr id="L26-TCE">
+                <td>
+                  <p>-</p>
+                </td>
+                <td>11 BBY</td>
+                <td>
+                  <p>A New Dawn</p>
+                </td>
+              </tr>
+              <tr id="L27-TCE">
+                <td>
+                  <p>The Han Solo Trilogy: The Paradise Snare</p>
+                </td>
+                <td>10 BBY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L28-TCE">
+                <td>
+                  <p>The Han Solo Trilogy: The Hutt Gambit</p>
+                </td>
+                <td>5-4 BBY</td>
+                <td>
+                  <p>Rebels TV Show: Season 1</p>
+                </td>
+              </tr>
+              <tr id="L29-TCE">
+                <td>
+                  <p>-</p>
+                </td>
+                <td>4-3 BBY</td>
+                <td>
+                  <p>Rebels TV Show: Season 2</p>
+                </td>
+              </tr>
+              <tr id="L30-TCE">
+                <td>
+                  <p>Lando Calrissian and the Mindharp of Sharu</p>
+                  <p>Lando Calrissian and the Flamewind of Oseon</p>
+                </td>
+                <td>3 BBY</td>
+                <td>
+                  <p>Leia: Princess of Alderaan</p>
+                </td>
+              </tr>
+              <tr id="L31-TCE">
+                <td>
+                  <p>-</p>
+                </td>
+                <td>11-2 BBY</td>
+                <td>
+                  <p>Thrawn</p>
+                </td>
+              </tr>
+              </tr>
+              <tr id="L32-TCE">
+                <td>
+                  <p>Lando Calrissian and the Starcave of ThonBoka</p>
+                  <p>Han Solo at Stars' End</p>
+                  <p>Han Solo's Revenge</p>
+                  <p>Han Solo and the Lost Legacy</p>
+                  <p>The Han Solo Trilogy: Rebel Dawn</p>
+                  <p>The Force Unleashed</p>
+                  <p>The Force Unleashed II</p>
+                </td>
+                <td>3-1 BBY</td>
+                <td>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L33-TCE">
+                <td>
+                  <p>Death Troopers</p>
+                  <p>Death Star</p>
+                  <p>Shadow Games</p>
+                </td>
+                <td>1-0 BBY</td>
+                <td>
+                  <p>Rebels TV Show Season 3</p>
+                  <p>Rebel Rising</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="Title_RebellionEra">
+                <td class="Era" colspan="3">REBELLION ERA</td>
+              </tr>
+              <tr id="L34-TCE">
+                <td>
+                  <p>-</p>
+                  <p>Episode IV: A New Hope</p>
+                  <p>Tales from the Mos Eisley Cantina</p>
+                  <p>-</p>
+                  <p>Scoundrels</p>
+                </td>
+                <td>0 BBY</td>
+                <td>
+                  <p>Rogue One</p>
+                  <p>Episode IV: A New Hope</p>
+                  <p>From a Certain Point of View</p>
+                  <p>Battlefront II: Inferno Squad</p>
+                  <p>Heir to the Jedi</p>
+                </td>
+              </tr>
+              <tr id="L35-TCE">
+                <td>
+                  <p>Allegiance</p>
+                </td>
+                <td>0.5 ABY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L36-TCE">
+                <td>
+                  <p>Choices of One</p>
+                </td>
+                <td>0.7 ABY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L37-TCE">
+                <td>
+                  <p>Honor Among Theives</p>
+                </td>
+                <td>1 ABY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L37-TCE">
+                <td>
+                  <p>Galaxies: The Ruins of Dantooine</p>
+                </td>
+                <td>1.5 ABY</td>
+                <td>
+                  <p>Battlefront: Twilight Company</p>
+                </td>
+              </tr>
+              <tr id="L38-TCE">
+                <td>
+                  <p>Splinter of the Mind's Eye</p>
+                  <p>Empire and Rebellion: Razor's Edge</p>
+                </td>
+                <td>2 ABY</td>
+                <td>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L38-TCE">
+                <td>
+                  <p>Episode V: The Empire Strikes Back</p>
+                  <p>Tales of the Bounty Hunters</p>
+                </td>
+                <td>3 ABY</td>
+                <td>
+                  <p>Episode V: The Empire Strikes Back</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L38-TCE">
+                <td>
+                  <p>Shadows of the Empire</p>
+                </td>
+                <td>3.5 ABY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L38-TCE">
+                <td>
+                  <p>Episode VI: Return of the Jedi</p>
+                  <p>The Truce at Bakura</p>
+                  <p>Tales from Jabba's Palace</p>
+                  <p>The Bounty Hunter Wars: The Mandalorian Armor</p>
+                  <p>The Bounty Hunter Wars: Slave Ship</p>
+                  <p>The Bounty Hunter Wars: Hard Merchandise</p>
+                  <p>Tales from the Empire</p>
+                </td>
+                <td>4 ABY</td>
+                <td>
+                  <p>Episode VI: Return of the Jedi</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+              </tr>
+              <tr id="L38-TCE">
+                <td>
+                  <p>-</p>
+                  <p>-</p>
+                </td>
+                <td>4.2 ABY</td>
+                <td>
+                  <p>Aftermath</p>
+                  <p>Aftermath: Life Debt</p>
+                </td>
+              </tr>
+              <tr id="L38-TCE">
+                <td>
+                  <p>-</p>
+                  <p>Luke Skywalker and the Shadows of Mindor</p>
+                </td>
+                <td>5 ABY</td>
+                <td>
+                  <p>Lost Stars</p>
+                  <p>Aftermath: Empire's End</p>
+                </td>
+              </tr>
+              <tr id="Title_TheNewRepublicEra">
+                <td class="Era" colspan="3">NEW REPUBLIC ERA</td>
+              </tr>
+              <tr id="L38-TCE">
+                <td>
+                  <p>-</p>
+                </td>
+                <td>6.5 ABY</td>
+                <td>
+                  <p>-</p>
+                </td>
+              </tr>
+            </tbody>
+            </tbody>
+          </table>
+        </div>
+        <div id="BlankSpaceFooter">
+        </div>
+      </div>
+    </div> <!--End Container-->
+</div> <!--End Content-->
+
+  <div class="back-button">
+	<a href="#"><img src="https://jldeveloper.github.io/JLDeveloper/Images/up-arrow.png" alt="up arrow"></a>
+  </div>
+
+  </body>
+</html>

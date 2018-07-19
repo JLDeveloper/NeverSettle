@@ -1,0 +1,238 @@
+@import "header.css";
+@import "responsive.css";
+@import "mobile.css";
+/***************ALL PAGES***************/
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 94%;
+  max-width: 1100px;
+  font-family: helvetica, sans-serif;
+}
+.content {
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+}
+.content p { /*for back-to-top button*/
+  margin-bottom: 10px;
+}
+.back-button {
+	display: inline-block;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	/*text-indent: -9999px;*/
+}
+.centered-content {
+  display: inline-block;
+  vertical-align: top;
+}
+/***************PORTFOLIO PAGE***************/
+.page-portfolio {
+  background-image: url("https://jldeveloper.github.io/JLDeveloper/images/portfolio/background-image.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: white;
+  padding-bottom: 300px;
+}
+/*Left hand navigation*/
+#leftnav {
+  position: fixed;
+  left: 0;
+  top: 15%;
+  z-index: 100;
+  background: rgb(54, 75, 95); /* Fall-back for browsers that don't support rgba */
+  background: rgb(54, 75, 95, .9);
+  border: 5px solid black; /*width-style-color*/
+  border-radius: 25px;
+  overflow: auto;
+}
+#leftcont {
+  padding: 5px;
+}
+#leftcont a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 0px;
+}
+.infobox {
+  background: rgb(54, 75, 95); /* Fall-back for browsers that don't support rgba */
+  background: rgb(54, 75, 95, .9);
+  border: 5px solid black; /*width-style-color*/
+  border-radius: 25px;
+  position: relative;
+  overflow: auto;
+}
+.infobox p {
+  margin: 0 auto;
+  border-color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.skill {
+  background: rgb(79, 81, 84); /* Fall-back for browsers that don't support rgba */
+  background: rgba(79, 81, 84, .7);
+  border: 3px solid black; /*width-style-color*/
+  border-radius: 25px;
+  position: relative;
+  padding: 10px;
+  max-width: 450px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+#skillset {
+  padding: 10px;
+}
+.column-title {
+  font-weight: bold;
+  text-decoration: underline;
+  color: white;
+  font-size: 20px;
+}
+#profile-pic {
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+#info {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.bigtext {
+  font-weight: bold;
+  font-size: 20px;
+  color: gold;
+}
+#section-title {
+	color: white;
+	font-family: Georgia, serif;
+	font-size: 30px;
+	font-weight: bold;
+  text-align: center;
+}
+ #work-descriptions {
+   margin: 30px;
+ }
+/***************COMING SOON***************/
+#coming-soon {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  font-size: 50px
+}
+.back-button {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+  cursor: poionter;
+}
+/***************PROJECTS PAGE***************/
+.page-projects {
+  background-image: url("https://jldeveloper.github.io/JLDeveloper/images/starwars/star-background.jpg");
+  background-color: #000000;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+/***************CONTACT PAGE***************/
+.page-contact {
+  background-image: url("https://jldeveloper.github.io/JLDeveloper/images/starwars/star-background.jpg");
+  background-color: #000000;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+}
+.icon figure{
+  width: 90px;
+  height: 90px;
+}
+.icon p {
+ color: white;
+}
+
+/***************STAR WARS PAGE***************/
+.page-starwars {
+  background-image: url("https://jldeveloper.github.io/JLDeveloper/images/starwars/star-background.jpg");
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+#starwars-header {
+ background: rgb(54, 75, 95); /* Fall-back for browsers that don't support rgba */
+ background: rgba(54,75, 95, .9);
+ border: 5px solid black; /*width-style-color*/
+ text-align: center;
+}
+.bookBox {
+	width: 50%;
+}
+#BookInfo {
+  width: auto;
+  height: auto;
+  float: left;
+}
+#SWPage {
+  margin-top: 50px;
+  width:1000px;
+}
+#SWTable table, th, td {
+  border: solid 0.5px black;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #d0be94;
+}
+#bookLegend {
+  font-size: 22px;
+  background-color: silver;
+}
+#timeline {
+  max-width: 150px;
+	min-width: 150px;
+}
+td:nth-child(2) {
+    background: silver;
+}
+.Era {
+  color: black;
+  font-size: 18px;
+  background-color: silver;
+}
+#BlankSpaceFooter {
+	width: 1px;
+  height: 300px;
+  float: left;
+}
+/***************MISTBORN***************/
+.page-mistborn {
+  background-image: url("https://jldeveloper.github.io/JLDeveloper/images/starwars/star-background.jpg");
+  background-color: #000000;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: bold;
+}

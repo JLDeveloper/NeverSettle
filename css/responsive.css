@@ -1,0 +1,26 @@
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* mouse over link - Nav*/
+#nav a:hover {
+    color: black;
+  	background-color: gold;
+}
+/* mouse over link - regular*/
+.back a:hover {
+    color: blue;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+/*Inactive Link*/
+.inactivelink {
+   cursor: default;
+}
+#leftnav a:hover {
+    color: gold;
+}
